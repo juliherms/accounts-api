@@ -44,6 +44,7 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-container-image-jib</artifactId>
     </dependency>
+    <!-- for tests -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
@@ -87,6 +88,7 @@
           </compilerArgs>
         </configuration>
       </plugin>
+      <!-- The project generator also sets up the Maven Surefire plugin for testing -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${surefire-plugin.version}</version>
