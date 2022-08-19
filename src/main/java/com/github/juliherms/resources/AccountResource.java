@@ -1,4 +1,4 @@
-package com.github.juliherms;
+package com.github.juliherms.resources;
 
 import com.github.juliherms.model.Account;
 

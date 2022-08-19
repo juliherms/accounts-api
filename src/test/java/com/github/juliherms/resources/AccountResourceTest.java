@@ -1,4 +1,4 @@
-package com.github.juliherms.resource;
+package com.github.juliherms.resources;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.*;
