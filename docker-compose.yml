@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  #postgres database
+  postgres-instance: 
+    container_name: postgres-bank
+    image: postgres:12.3
+    volumes:
+      - "/var/lib/postgresql/data:/var/lib/postgresql/data" 
+    #Enviroment variable for DB name, user and password 
+    environment:
+      POSTGRES_USER: register
+      POSTGRES_PASSWORD: register
+      POSTGRES_DB: quarkus_banking
+    ports:
+      - 5432:5432
+    networks:
+      - my-network
+   
+networks: 
+  my-network:
+    driver: bridge
+ 
